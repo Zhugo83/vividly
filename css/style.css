@@ -18,17 +18,30 @@
 }
 
 .container{
-    max-width: 1440px;
+    max-width: px;
     margin:auto;
 }
 
 a{
-text-decoration: none;
+    text-decoration: none;
 }
 ul{
     list-style: none;
+    padding: 0px;
 }
+h2{
+    font-family: var(--roboto);
+    font-size: 24px;
+    color: var(--gray);
+}
+p{
+    font-family: var(--roboto);
+    font-size: 15px;
+    color: var(--gray);
+}
+/* GEneral above */
 
+/* Header */
 header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -47,10 +60,14 @@ header > i{
     text-align: right;
     font-size: 16px;
 }
+
+/* Main */
 main{
     display: grid;
     gap: 40px;
 }
+
+/* Section 1 */
 section:nth-child(1){
     background-color: var(--yellow);
     text-align: center;
@@ -59,16 +76,6 @@ section:nth-child(1) div{
     padding: 30px 15px 30px 15px;
     display: grid;
     gap: 20px;
-}
-section:nth-child(1) div h2{
-    font-family: var(--roboto);
-    font-size: 24px;
-    color: var(--gray);
-}
-section:nth-child(1) div p{
-    font-family: var(--roboto);
-    font-size: 15px;
-    color: var(--gray);
 }
 section:nth-child(1) div form{
     display: flex;
@@ -89,8 +96,28 @@ section:nth-child(1) div form button{
     padding: 10px 16px;
     border: 0px;
 }
-section:nth-child(2){
-    padding: 0px 15px;
+
+/* Footer */
+footer{
+    background-color: var(--gray);
+    padding: 15px;
+    display: grid;
+    gap: 20px;
+}
+footer h2{
+    color: var(--white);
+    font-size: 30px;
+    font-family: var(--shrikhand);
+}
+footer ul{
+    display: grid;
+    gap: 20px;
+}
+footer ul li a{
+    color: var(--white);
+    font-family: var(--roboto);
+    font-size: 15px;
+    font-weight: 300;
 }
 @media screen and (max-width: 767px){
     header nav{
