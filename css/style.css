@@ -145,19 +145,64 @@ section:nth-child(3) article img{
     border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 140px;
+    background-size: cover;
 }
-section:nth-child(3) article form{
+section:nth-child(3) article form {
     border-top: solid 1px var(--darkyellow);
     margin: 15px;
     padding: 15px 0px 15px 0px;
+    font-family: var(--roboto);
+    font-weight: 300;
+    display: flex;
+}
+
+section:nth-child(3) article form .fa-thumbs-up{
+    right: 30px;
+    position: absolute;
+}
+  /* Hide the checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+  /* Style for the label */
+label {
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+  /* Default image */
+#img2 {
+    display: none;
+}
+
+  /* When the checkbox is checked, show the second image */
+input[type="checkbox"]:checked + label #img1 {
+    display: none;
+}
+
+input[type="checkbox"]:checked + label #img2 {
+    display: inline-block;
+}
+
+  /* When the checkbox is not checked, show the first image */
+input[type="checkbox"]:not(:checked) + label #img1 {
+    display: inline-block;
+}
+
+input[type="checkbox"]:not(:checked) + label #img2 {
+    display: none;
 }
 section:nth-child(3) article a h3{
+    font-family: var(--roboto);
     padding: 15px 15px 0px 15px;
     color: var(--black);
+    font-weight: 700;
 }
 section:nth-child(3) article a p{
     padding: 0px 15px 15px 15px;
     color: var(--black);
+    font-weight: 300;
 }
 /* Footer */
 footer{
