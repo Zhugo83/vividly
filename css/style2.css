@@ -31,6 +31,7 @@
 a{
     text-decoration: none;
     color: var(--black);
+    font-family: var(--roboto);
 }
 ul{
     list-style: none;
@@ -40,6 +41,9 @@ h2{
     font-family: var(--roboto);
     font-size: 24px;
     color: var(--gray);
+}
+h3{
+    font-family: var(--roboto);
 }
 p{
     font-family: var(--roboto);
@@ -76,7 +80,7 @@ header{
 }
 header > a:nth-child(2){
     grid-column-start: 2;
-    font-size: 30px;
+    font-size: 20px;
     font-family: var(--shrikhand);
     color: var(--black);
 }

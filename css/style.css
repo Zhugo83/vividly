@@ -88,7 +88,7 @@ header{
 }
 header > a{
     grid-column-start: 2;
-    font-size: 30px;
+    font-size: 20px;
     font-family: var(--shrikhand);
     color: var(--black);
 }
@@ -302,6 +302,13 @@ section:nth-child(3) > a{
     border: 0px;
     max-width: 100px;
     margin: 30px auto 30px auto;
+    transition: all 1s;
+    scale: 1;
+    font-family: var(--roboto);
+}
+section:nth-child(3) > a:hover{
+    transition: all 1s;
+    scale: 1.1;
 }
 /* Footer */
 footer{
