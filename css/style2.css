@@ -30,6 +30,7 @@
 
 a{
     text-decoration: none;
+    color: var(--black);
 }
 ul{
     list-style: none;
@@ -45,6 +46,23 @@ p{
     font-size: 15px;
     color: var(--gray);
 }
+
+li > i{
+    color: var(--black);
+    transition: all 1s;
+}
+li > i:hover{
+    color: var(--darkyellow);
+    transition: all 1s;
+}
+li > a{
+    color: var(--black);
+    transition: all 1s;
+}
+li > a:hover{
+    color: var(--darkyellow);
+    transition: all 1s;
+}
 /* GEneral above */
 
 /* Header */
@@ -56,18 +74,18 @@ header{
     text-align: center;
     padding: 15px;
 }
-header > a{
+header > a:nth-child(2){
     grid-column-start: 2;
     font-size: 30px;
     font-family: var(--shrikhand);
     color: var(--black);
 }
-header > i:last-child{
+header > i{
     text-align: right;
     font-size: 16px;
 }
 
-header > i:first-child{
+header > a:first-child > i{
     text-align: left;
     font-size: 16px;
 }
@@ -338,3 +356,13 @@ footer div ul li a{
         gap: 20px;
     }
 }
+
+.loading {
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
